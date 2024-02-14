@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage - contact us</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240214234615">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="css/style.min.css?_v=20240214234615" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a class="header__logo" href="/"><img src="img/Logo.webp" alt="Logo"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+							<li class="menu__item"><a class="menu__link" href="contact-us.html">Contacts us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="contacts">
+				<div class="contacts__top">
+					<h2 class="contacts__title">
+						Get in touch! <span>We'd love to hear from you!</span>
+					</h2>
+				</div>
+				<div class="contacts__container">
+					<form class="contacts__form form-contacts">
+						<div class="form-contacts__items">
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">First Name *</div>
+								<input data-required autocomplete="off" type="text" name="form[FirstName]" data-error="Error" placeholder="" class="form-contacts__input input" />
+							</label>
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">Last Name *</div>
+								<input data-required autocomplete="off" type="text" name="form[LastName]" data-error="Error" placeholder="" class="form-contacts__input input" />
+							</label>
+						</div>
+						<div class="form-contacts__items">
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">Job Title *</div>
+								<input data-required autocomplete="off" type="text" name="form[Job]" data-error="Error" placeholder="" class="form-contacts__input input" />
+							</label>
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">Company Name *</div>
+								<input data-required autocomplete="off" type="text" name="form[CompanyName]" data-error="Error" placeholder="" class="form-contacts__input input" />
+							</label>
+						</div>
+						<div class="form-contacts__items">
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">Phone number *</div>
+								<input data-required autocomplete="off" type="text" name="form[Phone]" data-error="Error" placeholder="" class="form-contacts__input input" />
+							</label>
+							<label class="form-contacts__label">
+								<div class="form-contacts__title">Company Email *</div>
+								<input data-required="email" autocomplete="off" type="text" name="form[Email]" data-error="invalid Email" placeholder="" class="form-contacts__input input" />
+							</label>
+						</div>
+						<label class="form-contacts__label">
+							<div class="form-contacts__title">
+								Link to your website and/or marketplace product listing(s) *
+							</div>
+							<input data-required autocomplete="off" type="text" name="form[website]" data-error="Error" placeholder="" class="form-contacts__input input" />
+						</label>
+						<label class="form-contacts__label">
+							<div class="form-contacts__title">
+								What is your company's annual ecommerce revenue?
+							</div>
+							<select data-required="sel" name="form[select-company]" data-class-modif="form">
+								<option value="" disabled selected>Choose an option</option>
+								<option value="1">Less than $100.000</option>
+								<option value="2">$1M - $50M</option>
+								<option value="3">Over $100M</option>
+							</select>
+						</label>
+						<label class="form-contacts__label">
+							<div class="form-contacts__title">
+								How did you hear about us? *
+							</div>
+							<select name="form[select-about]" data-class-modif="form">
+								<option value="" disabled selected>Choose an option</option>
+								<option value="1">Less than $100.000</option>
+								<option value="2">$1M - $50M</option>
+								<option value="3">Over $100M</option>
+							</select>
+						</label>
+						<label class="form-contacts__label">
+							<div class="form-contacts__title">Message</div>
+							<textarea data-required autocomplete="off" type="textarea" name="form[Message]" data-error="Error" placeholder="" class="form-contacts__textarea input"></textarea>
+						</label>
+						<button class="button button--submit" type="submit">Send</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copy">All right reserved 2024</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20240214234615"></script>
+</body>
+
+</html>
