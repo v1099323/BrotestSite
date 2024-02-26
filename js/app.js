@@ -730,6 +730,8 @@
             }));
         }
     }), 0);
+    const currentYear = (new Date).getFullYear();
+    document.querySelector(".footer__copy span").textContent = currentYear;
     window["FLS"] = false;
     isWebp();
     menuInit();
