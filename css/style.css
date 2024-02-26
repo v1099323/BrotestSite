@@ -697,6 +697,30 @@ textarea.input {
   background: url("../img/icons/03.webp") left/cover no-repeat;
 }
 
+.about__icon--04 {
+  background: url("../img/icons/04.webp") left/cover no-repeat;
+}
+
+.about__icon--05 {
+  background: url("../img/icons/05.webp") left/cover no-repeat;
+}
+
+.about__icon--06 {
+  background: url("../img/icons/06.webp") left/cover no-repeat;
+}
+
+.about__icon--07 {
+  background: url("../img/icons/07.webp") left/cover no-repeat;
+}
+
+.about__icon--08 {
+  background: url("../img/icons/08.webp") left/cover no-repeat;
+}
+
+.about__icon--09 {
+  background: url("../img/icons/09.webp") left/cover no-repeat;
+}
+
 .about__text {
   font-size: 1rem;
   line-height: 133%;
