@@ -417,6 +417,8 @@ textarea.input {
 }
 
 .button {
+  text-transform: uppercase;
+  border-radius: 0.625rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
