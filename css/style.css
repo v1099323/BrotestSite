@@ -470,7 +470,6 @@ textarea.input {
 .header__logo {
   position: relative;
   z-index: 2;
-  max-width: 5rem;
 }
 
 .header__logo img {
@@ -764,6 +763,10 @@ textarea.input {
 }
 
 @media (min-width: 75em) {
+  .header__logo {
+    max-width: 10rem;
+  }
+
   .menu__list {
     -webkit-column-gap: 3.75rem;
        -moz-column-gap: 3.75rem;
@@ -856,6 +859,10 @@ textarea.input {
 }
 
 @media (max-width: 20em) {
+  .header__logo {
+    max-width: 3.75rem;
+  }
+
   .menu__list {
     -webkit-column-gap: 0.9375rem;
        -moz-column-gap: 0.9375rem;
@@ -1050,10 +1057,6 @@ textarea.input {
     min-height: 5rem;
   }
 
-  .header__logo {
-    max-width: 3.75rem;
-  }
-
   .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1114,6 +1117,18 @@ textarea.input {
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
+@supports (max-width: clamp( 3.75rem , 1.4772727273rem  +  11.3636363636vw , 10rem )) {
+    .header__logo {
+      max-width: clamp( 3.75rem , 1.4772727273rem  +  11.3636363636vw , 10rem );
+    }
+}
+
+@supports not (max-width: clamp( 3.75rem , 1.4772727273rem  +  11.3636363636vw , 10rem )) {
+    .header__logo {
+      max-width: calc(3.75rem + 6.25 * (100vw - 20rem) / 55);
+    }
+}
+
 @supports ((-moz-column-gap: clamp( 0.9375rem , -0.0852272727rem  +  5.1136363636vw , 3.75rem )) or (column-gap: clamp( 0.9375rem , -0.0852272727rem  +  5.1136363636vw , 3.75rem ))) {
     .menu__list {
       -webkit-column-gap: clamp( 0.9375rem , -0.0852272727rem  +  5.1136363636vw , 3.75rem );
