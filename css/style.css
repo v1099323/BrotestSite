@@ -454,6 +454,8 @@ textarea.input {
 }
 
 .header__container {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   min-height: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
