@@ -447,7 +447,9 @@ textarea.input {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #000;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   z-index: 50;
 }
 
@@ -488,7 +490,8 @@ textarea.input {
 }
 
 .menu__link {
-  font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
   line-height: 133%;
   letter-spacing: 0.05em;
   color: #fff;
@@ -642,7 +645,7 @@ textarea.input {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  max-width: 100%;
+  max-width: 28.125rem;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -866,7 +869,7 @@ textarea.input {
   }
 
   .contacts__top {
-    padding-top: 9.375rem;
+    padding-top: 11.25rem;
   }
 
   .contacts__title {
@@ -1373,15 +1376,15 @@ textarea.input {
     }
 }
 
-@supports (padding-top: clamp( 6.25rem , 5.1136363636rem  +  5.6818181818vw , 9.375rem )) {
+@supports (padding-top: clamp( 6.25rem , 4.4318181818rem  +  9.0909090909vw , 11.25rem )) {
     .contacts__top {
-      padding-top: clamp( 6.25rem , 5.1136363636rem  +  5.6818181818vw , 9.375rem );
+      padding-top: clamp( 6.25rem , 4.4318181818rem  +  9.0909090909vw , 11.25rem );
     }
 }
 
-@supports not (padding-top: clamp( 6.25rem , 5.1136363636rem  +  5.6818181818vw , 9.375rem )) {
+@supports not (padding-top: clamp( 6.25rem , 4.4318181818rem  +  9.0909090909vw , 11.25rem )) {
     .contacts__top {
-      padding-top: calc(6.25rem + 3.125 * (100vw - 20rem) / 55);
+      padding-top: calc(6.25rem + 5 * (100vw - 20rem) / 55);
     }
 }
 
