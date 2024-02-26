@@ -470,7 +470,7 @@ textarea.input {
 .header__logo {
   position: relative;
   z-index: 2;
-  max-width: 9rem;
+  max-width: 5rem;
 }
 
 .header__logo img {
@@ -530,7 +530,7 @@ textarea.input {
 
 .hero__title {
   font-weight: 200;
-  max-width: 28.125rem;
+  max-width: 37.5rem;
   line-height: 120%;
 }
 
@@ -571,6 +571,7 @@ textarea.input {
 }
 
 .item-achievements__text {
+  text-transform: uppercase;
   font-weight: 300;
   text-align: center;
   font-size: 1rem;
@@ -1050,7 +1051,7 @@ textarea.input {
   }
 
   .header__logo {
-    max-width: 6.25rem;
+    max-width: 3.75rem;
   }
 
   .menu__list {
