@@ -681,10 +681,10 @@ textarea.input {
   position: relative;
   top: -0.9375rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 5.9375rem;
-          flex: 0 0 5.9375rem;
-  width: 5.9375rem;
-  height: 5.9375rem;
+      -ms-flex: 0 0 4.6875rem;
+          flex: 0 0 4.6875rem;
+  width: 4.6875rem;
+  height: 4.6875rem;
 }
 
 .about__icon--01 {
