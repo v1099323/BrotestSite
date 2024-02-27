@@ -758,21 +758,6 @@
     }), 0);
     const currentYear = (new Date).getFullYear();
     document.querySelector(".footer__copy span").textContent = currentYear;
-    const bntSubmit = document.querySelector(".button--submit");
-    bntSubmit.addEventListener("click", sendEmail);
-    function sendEmail(event) {
-        event.preventDefault();
-        let formData = new FormData(document.getElementById("myForm"));
-        console.log(formData);
-        fetch("files/sendmail/sendmail.php", {
-            method: "POST",
-            body: formData
-        }).then((response => {
-            if (response.ok) alert("Email успешно отправлен!"); else alert("Ошибка при отправке email.");
-        })).catch((error => {
-            console.error("Произошла ошибка:", error);
-        }));
-    }
     window["FLS"] = false;
     isWebp();
     menuInit();
