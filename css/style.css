@@ -449,10 +449,20 @@ textarea.input {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-backdrop-filter: blur(0.625rem);
+          backdrop-filter: blur(0.625rem);
+}
+
+.header._header-scroll {
   background-color: #000;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  z-index: 50;
 }
 
 .header__container {
@@ -472,6 +482,8 @@ textarea.input {
 }
 
 .header__logo {
+  overflow: hidden;
+  border-radius: 50%;
   position: relative;
   z-index: 2;
 }
@@ -480,6 +492,10 @@ textarea.input {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.header__menu {
+  justify-self: flex-end;
 }
 
 .menu__list {
