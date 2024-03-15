@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-	<title>HomePage - contact us</title>
+	<title>Asterionglobalcorp - contact us</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240227204045">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240315195528">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<link rel="stylesheet" href="css/style.min.css?_v=20240227204045" />
+<link rel="stylesheet" href="css/style.min.css?_v=20240315195528" />
 <link rel="shortcut icon" href="favicon.ico" />
 
 <body>
@@ -19,6 +19,16 @@
 		<header class="header" data-scroll-show>
 			<div class="header__container">
 				<a class="header__logo" href="index.html"><img src="img/Logo.jpg" alt="Logo"></a>
+				<div class="header__actions actions-header">
+					<ul class="actions-header__list">
+						<li class="actions-header__item">
+							<a class="actions-header__link" href="tel:+14143752388">+14143752388</a>
+						</li>
+						<li class="actions-header__item">
+							<a class="actions-header__link" href="mailto:contact@asterionglobalcorp.com">contact@asterionglobalcorp.com</a>
+						</li>
+					</ul>
+				</div>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
@@ -34,14 +44,14 @@
 			<section class="contacts">
 				<div class="contacts__top">
 					<h2 class="contacts__title">
-						Get in touch! <span>We'd love to hear from you!</span>
+						PLEASE FILL UP THE FORM AND OUR TEAM WILL GET IN TOUCH WITH YOU!
 					</h2>
 					<video class="contacts__video" autoplay loop muted>
 						<source src="files/video/01.mp4" type="video/mp4" />
 					</video>
 				</div>
 				<div class="contacts__container">
-					<form id="myForm" data-ajax action="files/sendmail/sendmail.php" method="POST" class="contacts__form form-contacts">
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="contacts__form form-contacts">
 						<div class="form-contacts__items">
 							<label class="form-contacts__label">
 								<div class="form-contacts__title">First Name *</div>
@@ -65,7 +75,7 @@
 						<div class="form-contacts__items">
 							<label class="form-contacts__label">
 								<div class="form-contacts__title">Phone number *</div>
-								<input data-required autocomplete="off" pattern="[0-9]{10}" type="text" name="form[Phone]" data-error="Error" placeholder="" class="form-contacts__input input" />
+								<input data-required autocomplete="off" type="tel" data-inputmask-regex="\+?[0-9]+(\-[0-9]+)*" data-inputmask-placeholder="" maxlength="15" name="form[Phone]" data-error="Error" placeholder="" class="form-contacts__input input" />
 							</label>
 							<label class="form-contacts__label">
 								<div class="form-contacts__title">Company Email *</div>
@@ -83,18 +93,19 @@
 						<input hidden type="hidden" name="_captcha" value="false" />
 						<input hidden type="hidden" name="_template" value="box" />
 						<button class="button button--submit" type="submit">Send</button>
+						<div class="sending">
+							<span class="loader"></span>
+						</div>
 					</form>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__copy">All right reserved <span></span></div>
-			</div>
+
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240227204045"></script>
+	<script src="js/app.min.js?_v=20240315195528"></script>
 </body>
 
 </html>
