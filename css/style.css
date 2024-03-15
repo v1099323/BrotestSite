@@ -624,6 +624,7 @@ textarea.input {
 
 .actions-header__link {
   text-transform: uppercase;
+  font-size: 1.125rem;
   line-height: 133%;
   letter-spacing: 0.05em;
   color: #fff;
@@ -1033,10 +1034,6 @@ textarea.input {
             column-gap: 3.75rem;
   }
 
-  .actions-header__link {
-    font-size: 1.125rem;
-  }
-
   .hero__container {
     padding-bottom: 3.125rem;
   }
@@ -1170,10 +1167,6 @@ textarea.input {
     -webkit-column-gap: 0.9375rem;
        -moz-column-gap: 0.9375rem;
             column-gap: 0.9375rem;
-  }
-
-  .actions-header__link {
-    font-size: 1.125rem;
   }
 
   .hero__container {
@@ -1566,18 +1559,6 @@ textarea.input {
       -webkit-column-gap: calc(0.9375rem + 2.8125 * (100vw - 20rem) / 55);
          -moz-column-gap: calc(0.9375rem + 2.8125 * (100vw - 20rem) / 55);
               column-gap: calc(0.9375rem + 2.8125 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (font-size: clamp( 1.125rem , 1.125rem  +  0vw , 1.125rem )) {
-    .actions-header__link {
-      font-size: clamp( 1.125rem , 1.125rem  +  0vw , 1.125rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.125rem , 1.125rem  +  0vw , 1.125rem )) {
-    .actions-header__link {
-      font-size: calc(1.125rem + 0 * (100vw - 20rem) / 55);
     }
 }
 
